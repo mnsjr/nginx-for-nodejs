@@ -8,6 +8,7 @@ In your local host machine add the following lines to your `/etc/hosts` or `sudo
 ```
 127.0.0.1   www.nodejs.dvp
 ```
+Para salvar suas alterações e sair do Vim, pressione Esc para sair do modo de inserção e digite :wq (significando "escrever" e "sair") e depois pressione Enter.
 
 Verificar se a alteração foi bem sucedida:
 ```
