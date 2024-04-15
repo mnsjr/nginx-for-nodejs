@@ -4,20 +4,26 @@ Short tutorial on how to setup NGinx to run with NodeJS and PM2.
 Full **portuguese** tutorial is here: https://youtu.be/Sa74-4ExZ4Q
 
 # 1st Step: Domain name
-In your local host machine add the following lines to your `/etc/hosts` file in order to find the application.
+In your local host machine add the following lines to your `/etc/hosts` or `sudo vim /etc/hosts` file in order to find the application.
 ```
 127.0.0.1   www.nodejs.dvp
+```
+
+Verificar se a alteração foi bem sucedida:
+```
+cat /etc/hosts
 ```
 
 # 2nd Step: Preparing the environment
 Build your custom Docker Image running `./docker/build.sh` 
 
 # 3rd Step: Running Docker
-`docker-compose up`: Standalone execution
-`docker-compose up -d`: Daemon mode execution
+`docker compose up`: Standalone execution
+`docker compose up -d`: Daemon mode execution
 
 # 4th Step: Check your browser
 Open http://www.nodejs.dvp/ and check the headers on your devtools, and you should see this entry `Server: nginx`.
+
 
 # Studying how it works
 The most important scripts are:
